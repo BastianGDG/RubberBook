@@ -9,8 +9,10 @@ body {
 .navbar {
     background-color: #3b5998;
     color: white;
-    padding: 15px;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
@@ -25,6 +27,51 @@ body {
 
 .navbar h1 span {
     color: #42b72a;
+}
+
+.navbar-center {
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center input {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.navbar-center i {
+    position: absolute;
+    right: 10px;
+    color: #666;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right i {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar-right .profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar-right .profile img {
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .container {
@@ -55,67 +102,24 @@ body {
     max-width: 600px;
 }
 
-.post {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
+.create-post {
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 10px;
     border-radius: 8px;
+    margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
-.post:hover {
-    transform: translateY(-5px);
-}
-
-.post h4 {
-    margin: 0;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-}
-
-.post p {
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.friends-list,
-.groups-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.friends-list li,
-.groups-list li {
-    padding: 10px 0;
-    border-bottom: 1px solid #f0f0f0;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.friends-list li:hover,
-.groups-list li:hover {
-    background-color: #f0f0f0;
-}
-
-.friends-list li:last-child,
-.groups-list li:last-child {
-    border-bottom: none;
-}
-
-.friends-list li i,
-.groups-list li i {
+.create-post img {
+    border-radius: 50%;
     margin-right: 10px;
-    color: #4267b2;
 }
 
-/* Icons */
-.post h4 i,
-.friends-list li i,
-.groups-list li i {
-    font-size: 18
+.create-post input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+   
