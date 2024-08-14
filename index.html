@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empty Body</title>
+    <title>RubberBook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #4267b2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #f1f1f1;
+            padding: 15px;
+        }
+        .content {
+            width: 50%;
+            margin: 0 20px;
+        }
+        .post {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .friends-list {
+            list-style: none;
+            padding: 0;
+        }
+        .friends-list li {
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="navbar">
+        <h1>RubberBook</h1>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Friends</h3>
+            <ul class="friends-list">
+                <li>Friend 1</li>
+                <li>Friend 2</li>
+                <li>Friend 3</li>
+                <li>Friend 4</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="post">
+                <h4>User 1</h4>
+                <p>This is a post on RubberBook. Just a simple status update!</p>
+            </div>
+            <div class="post">
+                <h4>User 2</h4>
+                <p>Another post. RubberBook is awesome!</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Groups</h3>
+            <ul class="friends-list">
+                <li>Group 1</li>
+                <li>Group 2</li>
+                <li>Group 3</li>
+                <li>Group 4</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
